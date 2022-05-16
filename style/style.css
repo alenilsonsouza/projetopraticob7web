@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.bt {
+    text-transform: uppercase;
+    padding: 15px 25px;   
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bt.bt-black {
+    background-color: #000;
+    color:#fff;
+}
+
+.bt.bt-black:hover {
+    background-color:#1ed760;
+    color:#2941ab
+}
+.bt.bt-green {
+    background-color:#1ed760;
+    color:#2941ab
+}
+.bt.bt-green:hover {
+    background-color:#000;
+    color:#fff;
+}
+p{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.header {
+    background-color:black;
+    padding: 15px 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header-left img {
+    height: 50px;
+}
+.header .header-right nav{
+    display: flex;
+    align-items: center;
+}
+.header .header-right nav .divisor {
+    color: #fff;
+}
+.header .header-right nav ul {
+    display:flex
+}
+.header .header-right nav ul li a{
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+}
+.header .header-right nav ul li a:hover {
+    text-decoration: underline;
+}
+.header .header-right nav ul:first-child li a{
+    font-weight: bold;
+}
+.title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.banner {
+    padding: 60px 0;
+    background-color:#993399;
+    color: #fff;
+}
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+}
+.banner .banner-left{
+    margin-right: 50px;
+}
+.banner .banner-right{
+
+}
+.banner .banner-right img {
+    max-width: 400px;
+}
+.banner .banner-legend {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.banner .banner-info {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.banner .banner-info a {
+    color: #fff
+}
+.banner2 {
+    background-color:#2941ab;
+    color:#1ed760
+}
+
+@media (max-width: 1080px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+@media (max-width: 768px) {
+    .banner .container {
+        flex-direction: column;
+    }
+    .banner .banner-right {
+        margin-top: 30px;
+    }
+    .banner .banner-right {
+        width: 100%;
+    }
+    .banner .banner-right img {
+        max-width: 100%;
+    }
+}
